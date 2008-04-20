@@ -7,8 +7,9 @@ module BetterSendFile
   # i.e. /private/some_file.gif would send the file at RAILS_ROOT/private/some_file.gif.
   
   # Valid options are:
-  # :type Setting for Content-Type header (defaults to force-download)
-  # :filename Setting for Content-Disposition header (defaults to File.basename(file))
+  # :type         Setting for Content-Type header (defaults to force-download)
+  # :disposition  Setting for Content-Disposition header (defaults to 'attachment')
+  # :filename     Setting for Content-Disposition header (defaults to File.basename(file))
   def send_file(path, original_options = {})
     
     # Set up options
