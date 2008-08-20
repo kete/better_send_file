@@ -18,7 +18,7 @@ usage
 
 	a) Add the following declaration in the server block on the nginx.conf file
 	
-	location ^~ /private {
+	location /private/ {
 		root /home/user/apps/my_app/;
 		internal;
 	}
