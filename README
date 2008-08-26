@@ -1,6 +1,14 @@
 better-send-file
 ================
 
+Deprecation Notice
+==================
+
+This plugin is not longer in use in Kete and therefore will no longer be maintained by Katipo Communications LTD.
+
+Summary
+=======
+
 better_send_file is a plugin by James Stradling <http://www.katipo.co.nz> which overrides Rail's ActionController::Streaming#send_file method to use a reverse proxy to send files.
 
 This is especially useful when running Mongrels as web-servers as send_file can tie up a mongrel instance for a long period of time in some circumstances.
